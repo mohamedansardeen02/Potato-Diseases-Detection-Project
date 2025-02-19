@@ -34,7 +34,7 @@ img = Image.open("Diseases.png")
 
 # display image using streamlit
 # width is used to set the width of an image
-st.image(img)
+st.image(img, use_container_width=True)
 
 #Main Page
 if(app_mode=="HOME"):
@@ -45,7 +45,7 @@ elif(app_mode=="DISEASE RECOGNITION"):
     st.header("Plant Disease Detection System for Sustainable Agriculture")
     test_image = st.file_uploader("Choose an Image:")
     if(st.button("Show Image")):
-        st.image(test_image,width=4,use_column_width=True)
+        st.image(test_image, use_container_width=True)
     #Predict button
     if(st.button("Predict")):
         st.snow()
