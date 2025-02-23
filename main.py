@@ -55,3 +55,19 @@ elif(app_mode=="DISEASE RECOGNITION"):
                     'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus',
                       'Tomato___healthy']
         st.success("Model is Predicting it's a {}".format(class_name[result_index]))
+        # Display Mohamed Ansarddin's name in the bottom right corner
+st.markdown("""
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        font-size: 14px;
+        color: white;
+        background-color: black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    </style>
+    <div class="footer">Developed by Mohamed Ansarddin</div>
+    """, unsafe_allow_html=True)
